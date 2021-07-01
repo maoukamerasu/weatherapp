@@ -34,7 +34,7 @@ class HomeController extends Controller
             'today'=>$today,
             'week'=>$week,
             'hello'=>$weather[$json_decode->weather[0]->main],
-            'temp'=>$json_decode->main->temp,
+            'temp'=>number_format($json_decode->main->temp,2),
             'feels_like'=>$json_decode->main->feels_like,
             'min'=>$json_decode->main->temp_min,
             'max'=>$json_decode->main->temp_max,
