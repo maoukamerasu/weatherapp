@@ -1,20 +1,49 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
-    },
-    "devDependencies": {
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.1.14",
-        "vue":"^2.5.17",
-        "vue-template-compiler":"^2.6.10"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "axios": "^0.21",
+    "cross-env": "^7.0.3",
+    "laravel-elixir-vue-2": "^0.3.0",
+    "laravel-mix": "^6.0.18",
+    "lodash": "^4.17.19",
+    "postcss": "^8.1.14",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^1.16.5"
+  },
+  "dependencies": {
+    "ajv": "^8.6.0",
+    "browser-sync": "^2.27.3",
+    "imagemin": "^8.0.0",
+    "vue-loader": "^15.9.2",
+    "vue-router": "^3.5.2"
+  },
+  "name": "weatherapp",
+  "description": "<p align=\"center\"><a href=\"https://laravel.com\" target=\"_blank\"><img src=\"https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg\" width=\"400\"></a></p>",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maoukamerasu/weatherapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maoukamerasu/weatherapp/issues"
+  },
+  "homepage": "https://github.com/maoukamerasu/weatherapp#readme"
 }

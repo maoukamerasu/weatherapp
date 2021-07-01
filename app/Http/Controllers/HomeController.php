@@ -29,7 +29,20 @@ class HomeController extends Controller
             'Mist'=>'霧',
             'Smoke'=>'煙霧',
         );
-        $iconurl="<img src='https://openweathermap.org/img/wn/".$json_decode->weather[0]->icon."@2x.png'>";
+        $iconurl="https://openweathermap.org/img/wn/".$json_decode->weather[0]->icon."@2x.png";
+        $weatherdate=array(
+            'today'=>$today,
+            'week'=>$week,
+            'hello'=>$weather[$json_decode->weather[0]->main],
+            'temp'=>$json_decode->main->temp,
+            'feels_like'=>$json_decode->main->feels_like,
+            'min'=>$json_decode->main->temp_min,
+            'max'=>$json_decode->main->temp_max,
+            'icon'=>$iconurl,
+            'sea_level'=>$json_decode->main->pressure,
+            'humidity'=>$json_decode->main->humidity,
+            'wind_speed'=>$json_decode->wind->speed
+        );
         return view('welcome',['today'=>$today,
                                 'week'=>$week,
                                 'hello'=>$weather[$json_decode->weather[0]->main],
@@ -40,6 +53,7 @@ class HomeController extends Controller
                                 'icon'=>$iconurl,
                                 'sea_level'=>$json_decode->main->pressure,
                                 'humidity'=>$json_decode->main->humidity,
-                                'wind_speed'=>$json_decode->wind->speed]);
+                                'wind_speed'=>$json_decode->wind->speed,
+                                'weather'=>$weatherdate]);
     }
 }
