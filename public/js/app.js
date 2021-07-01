@@ -19431,7 +19431,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("table", { attrs: { border: "0", bgcolor: "#e3f0fb" } }, [
-      _c("tr", { attrs: { bgcolor: "#22ddcc" } }, [
+      _c("tr", { attrs: { bgcolor: "#88ddcc" } }, [
         _c("th", { attrs: { colspan: "2" } }, [
           _vm._v("福岡市"),
           _c("br"),

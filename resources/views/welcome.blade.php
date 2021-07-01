@@ -9,8 +9,8 @@
             <link href="{{ mix('css/app.css') }}" rel="stylesheet" type="text/css">
         <div id="app">
             <example-component v-bind:weather='@json($weather)'></example-component>
-            <script src="{{ mix('js/app.js') }}"></script>
         </div>
+        <script src="{{ mix('js/app.js') }}"></script>
         </body>
     </head>
 </html>

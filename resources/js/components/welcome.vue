@@ -1,7 +1,7 @@
 <template>
     <div>
         <table border="0" bgcolor="#e3f0fb">
-            <tr bgcolor="#22ddcc"><th colspan="2">福岡市<br>{{weather.today}}({{weather.week}})</th></tr>
+            <tr bgcolor="#88ddcc"><th colspan="2">福岡市<br>{{weather.today}}({{weather.week}})</th></tr>
             <tr><th colspan="2"><img :src="weather.icon"><font size="7" face="Comic Sans MS">{{weather.temp}}</font>℃</th></tr>
             <tr bgcolor="#cccccc"><th>気候</th><th>{{weather.hello}}</th></tr>
             <tr bgcolor="#cccccc"><th>体感温度</th><th>{{weather.feels_like}}℃</th></tr>
