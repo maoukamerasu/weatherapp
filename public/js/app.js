@@ -19430,8 +19430,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("table", { attrs: { border: "0", bgcolor: "#e3f0fb" } }, [
-      _c("tr", { attrs: { bgcolor: "#88ddcc" } }, [
+    _c("table", { attrs: { border: "0", bgcolor: "#008080" } }, [
+      _c("tr", { attrs: { bgcolor: "#808000" } }, [
         _c("th", { attrs: { colspan: "2" } }, [
           _vm._v("福岡市"),
           _c("br"),
