@@ -16,9 +16,9 @@ class HomeController extends Controller
         $json_decode = json_decode($json);
         $today=date("Y/m/d");
         $week_word=array(
-            '月','火','水','木','金','土','日'
+            '日','月','火','水','木','金','土'
         );
-        $week=$week_word[1];
+        $week=$week_word[date("w")];
         $weather=array(
             'Clouds'=>'雲',
             'Snow'=>'雪',
