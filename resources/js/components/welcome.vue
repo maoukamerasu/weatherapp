@@ -10,6 +10,8 @@
             <tr bgcolor="#cccccc"><th>海面気圧</th><th>{{weather.sea_level}}hPa</th></tr>
             <tr bgcolor="#cccccc"><th>湿度</th><th>{{weather.humidity}}%</th></tr>
             <tr bgcolor="#cccccc"><th>風速</th><th>{{weather.wind_speed}}m/s</th></tr>
+            <tr bgcolor="#66cdaa"><th colspan="2">天気予報</th></tr>
+            <tr bgcolor="#cccccc" v-for="day in weather.days" :key="day.id"><th>{{weather.future.list[day].dt_txt}}</th><th><img :src="weather.future.list[day].weather[0].icon" width="20" height="20">{{weather.future.list[day].main.temp}}℃</th></tr>
             </table>
     </div>
 </template>
@@ -18,6 +20,6 @@ export default{
     props:["weather"],
     mounted(){
         console.log(this.weather)
-    }
+    },
 }
 </script>
